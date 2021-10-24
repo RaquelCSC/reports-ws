@@ -1,0 +1,13 @@
+função pegaHost():
+    agrupar hosts iguais
+    dentro de cada grupo de hosts achar os IPs e pegar a data para saber quantas visitas por dia
+    imprimir o resultado da linha acima pra ver se funcionou
+
+função acessos():
+    pegar o grupo de hosts da função definida acima e agrupar a data quando MM e AA forem iguais para ver quantos acessos por mes
+    imprimir o resultao da linha acima pra ver se funcionou
+
+funçao tempo():
+    pegar o grupo de data e considerar um tempo médio para cada sessão
+    ao achar o horário e definir o tempo médio e vê quais ......................
+
