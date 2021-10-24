@@ -1,17 +1,18 @@
 from typing import List
 
 import psycopg2
+import os
 
 from server.model import Visitor, VisitorVisit, Product, ProductVisit
 
 
 def gen_connection():
     return psycopg2.connect(
-        user='report',
-        password='39yYg7sFKhVRH2z3',
-        host='127.0.0.1',
-        port='5432',
-        database='report'
+        user=os.environ.get('POSTGRES_USER'),
+        database=os.environ.get('POSTGRES_DB'),
+        password=os.environ.get('POSTGRES_PASSWORD'),
+        host=os.environ.get('POSTGRES_HOST'),
+        port=os.environ.get('POSTGRES_PORT')
     )
 
 

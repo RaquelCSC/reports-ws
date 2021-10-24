@@ -1,4 +1,5 @@
 apachelogs
 flask
-psycopg2
+psycopg2-binary
 flask_cors
+gunicorn

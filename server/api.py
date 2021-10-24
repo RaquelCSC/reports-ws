@@ -1,4 +1,5 @@
 import datetime
+import os
 
 from flask import Flask, request
 from flask_cors import CORS
@@ -60,4 +61,4 @@ def get_most_visited_products(activity_type):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=os.environ.get('DEBUG', 'true') == 'false')
